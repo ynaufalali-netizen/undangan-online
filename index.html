@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Wedding of Ali & Tiara</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <audio id="backgroundMusic" loop>
+        <source src="assets/musik.mp3.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- =====================================================
+         SLIDE 1 — OPENING
+    ====================================================== -->
+    <section class="opening" id="opening">
+
+        <div class="opening-overlay"></div>
+
+        <div class="opening-content">
+
+            <p class="small-title">THE WEDDING OF</p>
+
+            <h1>
+                Ali
+                <span>&</span>
+                Tiara
+            </h1>
+
+            <p class="opening-date">
+                20 . 12 . 2026
+            </p>
+
+            <p class="opening-text">
+                Kepada Yth.<br>
+                Bapak/Ibu/Saudara/i
+            </p>
+
+            <button class="open-button" id="openInvitation">
+                <i class="fa-solid fa-envelope-open"></i>
+                Buka Undangan
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SEMUA ISI UNDANGAN
+    ====================================================== -->
+    <main class="invitation" id="invitation">
+
+
+        <!-- =================================================
+             SLIDE 2 — BRIDE & GROOM
+        ================================================== -->
+        <section class="slide bride-groom" id="brideGroom">
+
+            <div class="slide-content">
+
+                <p class="section-label">THE BRIDE & GROOM</p>
+
+                <h2>
+                    Ali
+                    <span>&</span>
+                    Tiara
+                </h2>
+
+                <p class="couple-intro">
+                    Dengan penuh kebahagiaan, kami mengundang
+                    Bapak/Ibu/Saudara/i untuk menjadi bagian
+                    dari hari istimewa kami.
+                </p>
+
+
+                <div class="couple-wrapper">
+
+                    <!-- Groom -->
+                    <div class="person">
+
+                        <div class="person-photo">
+                            <img src="assets/pengantin.jpeg" alt="Ali">
+                        </div>
+
+                        <h3>Naufal Ali Yudhistira</h3>
+
+                        <p class="nickname">Ali</p>
+
+                        <p>
+                            Putra dari<br>
+                            Bapak ........ & Ibu ........
+                        </p>
+
+                    </div>
+
+
+                    <div class="couple-symbol">
+                        &
+                    </div>
+
+
+                    <!-- Bride -->
+                    <div class="person">
+
+                        <div class="person-photo">
+                            <img src="assets/pengantin2.jpeg" alt="Tiara">
+                        </div>
+
+                        <h3>Tiara Misyahhanzani</h3>
+
+                        <p class="nickname">Tiara</p>
+
+                        <p>
+                            Putri dari<br>
+                            Bapak ........ & Ibu ........
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <button class="next-button" data-next="weddingMenu">
+                    Selanjutnya
+                    <i class="fa-solid fa-arrow-down"></i>
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SLIDE 3 — WEDDING MENU
+        ================================================== -->
+        <section class="slide wedding-menu" id="weddingMenu">
+
+            <div class="slide-content">
+
+                <p class="section-label">OUR SPECIAL DAY</p>
+
+                <h2>
+                    Wedding
+                    <span>Menu</span>
+                </h2>
+
+                <p class="menu-description">
+                    Pilih bagian yang ingin kamu lihat.
+                </p>
+
+
+                <div class="menu-grid">
+
+
+                    <!-- SAVE THE DATE -->
+                    <button class="menu-card" data-target="saveDate">
+
+                        <i class="fa-regular fa-calendar-days"></i>
+
+                        <h3>Save The Date</h3>
+
+                        <p>
+                            Detail waktu dan tempat
+                            acara pernikahan.
+                        </p>
+
+                        <span>
+                            Lihat
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+
+                    </button>
+
+
+                    <!-- COUNTDOWN -->
+                    <button class="menu-card" data-target="countdown">
+
+                        <i class="fa-regular fa-clock"></i>
+
+                        <h3>Countdown</h3>
+
+                        <p>
+                            Hitung mundur menuju
+                            hari bahagia kami.
+                        </p>
+
+                        <span>
+                            Lihat
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+
+                    </button>
+
+
+                    <!-- OUR STORY -->
+                    <button class="menu-card" data-target="ourStory">
+
+                        <i class="fa-solid fa-book-open"></i>
+
+                        <h3>Our Story</h3>
+
+                        <p>
+                            Kisah perjalanan kami
+                            hingga sampai di hari ini.
+                        </p>
+
+                        <span>
+                            Lihat
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+
+                    </button>
+
+
+                    <!-- OUR MOMENTS -->
+                    <button class="menu-card" data-target="ourMoments">
+
+                        <i class="fa-regular fa-images"></i>
+
+                        <h3>Our Moments</h3>
+
+                        <p>
+                            Kumpulan momen indah
+                            perjalanan kami.
+                        </p>
+
+                        <span>
+                            Lihat
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+
+                    </button>
+
+
+                    <!-- RSVP -->
+                    <button class="menu-card" data-target="rsvp">
+
+                        <i class="fa-regular fa-envelope"></i>
+
+                        <h3>RSVP</h3>
+
+                        <p>
+                            Konfirmasi kehadiran
+                            di hari bahagia kami.
+                        </p>
+
+                        <span>
+                            Lihat
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+
+                    </button>
+
+                </div>
+
+
+                <button class="back-button" data-target="brideGroom">
+                    <i class="fa-solid fa-arrow-up"></i>
+                    Kembali
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SLIDE 4 — SAVE THE DATE
+        ================================================== -->
+        <section class="slide detail-slide" id="saveDate">
+
+            <div class="slide-content">
+
+                <p class="section-label">SAVE THE DATE</p>
+
+                <h2>
+                    The Day
+                </h2>
+
+                <div class="event-card">
+
+                    <i class="fa-regular fa-calendar"></i>
+
+                    <h3>Akad & Resepsi</h3>
+
+                    <p class="event-date">
+                        Minggu, 20 Desember 2026
+                    </p>
+
+                    <p>
+                        Pukul 10.00 WIB
+                    </p>
+
+                    <p>
+                        Gedung Pernikahan<br>
+                        Medan, Sumatera Utara
+                    </p>
+
+                    <button class="location-button">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Lihat Lokasi
+                    </button>
+
+                </div>
+
+                <button class="back-button" data-target="weddingMenu">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Kembali ke Menu
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SLIDE 5 — COUNTDOWN
+        ================================================== -->
+        <section class="slide detail-slide" id="countdown">
+
+            <div class="slide-content">
+
+                <p class="section-label">COUNTDOWN</p>
+
+                <h2>
+                    Until Our Day
+                </h2>
+
+                <p>
+                    Sebuah hari yang kami tunggu
+                    dengan penuh kebahagiaan.
+                </p>
+
+
+                <div class="countdown-wrapper">
+
+                    <div class="countdown-box">
+                        <strong id="days">00</strong>
+                        <span>Hari</span>
+                    </div>
+
+                    <div class="countdown-box">
+                        <strong id="hours">00</strong>
+                        <span>Jam</span>
+                    </div>
+
+                    <div class="countdown-box">
+                        <strong id="minutes">00</strong>
+                        <span>Menit</span>
+                    </div>
+
+                    <div class="countdown-box">
+                        <strong id="seconds">00</strong>
+                        <span>Detik</span>
+                    </div>
+
+                </div>
+
+
+                <button class="back-button" data-target="weddingMenu">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Kembali ke Menu
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SLIDE 6 — OUR STORY
+        ================================================== -->
+        <section class="slide detail-slide" id="ourStory">
+
+            <div class="slide-content">
+
+                <p class="section-label">OUR STORY</p>
+
+                <h2>
+                    Our Journey
+                </h2>
+
+
+                <div class="story-list">
+
+                    <div class="story-item">
+
+                        <span>01</span>
+
+                        <div>
+                            <h3>First Meet</h3>
+
+                            <p>
+                                Cerita awal ketika Ali dan Tiara
+                                pertama kali bertemu.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="story-item">
+
+                        <span>02</span>
+
+                        <div>
+                            <h3>Our Journey</h3>
+
+                            <p>
+                                Perjalanan yang kami lalui bersama,
+                                dengan segala cerita dan kenangan.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="story-item">
+
+                        <span>03</span>
+
+                        <div>
+                            <h3>The Proposal</h3>
+
+                            <p>
+                                Sebuah langkah kecil menuju
+                                perjalanan yang lebih besar.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="story-item">
+
+                        <span>04</span>
+
+                        <div>
+                            <h3>Forever Begins</h3>
+
+                            <p>
+                                Hingga akhirnya kami memutuskan
+                                untuk melangkah bersama.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <button class="back-button" data-target="weddingMenu">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Kembali ke Menu
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SLIDE 7 — OUR MOMENTS / GALERY
+        ================================================== -->
+        <section class="slide detail-slide" id="ourMoments">
+
+            <div class="slide-content">
+
+                <p class="section-label">OUR MOMENTS</p>
+
+                <h2>
+                    Our Gallery
+                </h2>
+
+                <p>
+                    Beberapa momen yang menjadi bagian
+                    dari perjalanan kami.
+                </p>
+
+
+                <div class="gallery">
+
+                    <img src="assets/galeri1.jpeg" alt="Our Moment 1">
+
+                    <img src="assets/galery2.jpeg" alt="Our Moment 2">
+
+                    <img src="assets/galery3.jpeg" alt="Our Moment 3">
+
+                    <img src="assets/galery4.jpeg" alt="Our Moment 4">
+
+                </div>
+
+
+                <button class="back-button" data-target="weddingMenu">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Kembali ke Menu
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SLIDE 8 — RSVP
+        ================================================== -->
+        <section class="slide detail-slide" id="rsvp">
+
+            <div class="slide-content">
+
+                <p class="section-label">RSVP</p>
+
+                <h2>
+                    Konfirmasi Kehadiran
+                </h2>
+
+                <p>
+                    Kehadiran dan doa restu Anda
+                    merupakan kebahagiaan bagi kami.
+                </p>
+
+
+                <form class="rsvp-form">
+
+                    <div class="form-group">
+
+                        <label for="guestName">
+                            Nama
+                        </label>
+
+                        <input
+                            type="text"
+                            id="guestName"
+                            placeholder="Masukkan nama"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="attendance">
+                            Kehadiran
+                        </label>
+
+                        <select id="attendance" required>
+
+                            <option value="">
+                                Pilih konfirmasi
+                            </option>
+
+                            <option value="hadir">
+                                Saya akan hadir
+                            </option>
+
+                            <option value="tidak-hadir">
+                                Saya tidak dapat hadir
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Ucapan
+                        </label>
+
+                        <textarea
+                            id="message"
+                            rows="4"
+                            placeholder="Tulis ucapan dan doa..."
+                        ></textarea>
+
+                    </div>
+
+
+                    <button type="submit" class="submit-button">
+
+                        <i class="fa-solid fa-paper-plane"></i>
+
+                        Kirim Konfirmasi
+
+                    </button>
+
+                </form>
+
+
+                <button class="back-button" data-target="weddingMenu">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    Kembali ke Menu
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SLIDE 9 — THANK YOU
+        ================================================== -->
+        <section class="slide thank-you" id="thankYou">
+
+            <div class="slide-content">
+
+                <p class="section-label">
+                    THANK YOU
+                </p>
+
+                <h2>
+                    Terima Kasih
+                </h2>
+
+                <p>
+                    Merupakan suatu kebahagiaan bagi kami
+                    apabila Bapak/Ibu/Saudara/i berkenan
+                    hadir dan memberikan doa restu.
+                </p>
+
+                <div class="thank-you-names">
+                    Ali <span>&</span> Tiara
+                </div>
+
+                <p class="closing-text">
+                    See you on our special day.
+                </p>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+    <footer id="footer">
+
+        <p>
+            Made with love for Ali & Tiara
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>

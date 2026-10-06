@@ -995,160 +995,357 @@ body {
    MOBILE
 ========================================================= */
 
+/* =========================================================
+   MOBILE - PERBAIKAN TAMPILAN HP
+========================================================= */
+
 @media (max-width: 600px) {
+
+    body {
+        overflow-x: hidden;
+    }
 
     .slide {
         min-height: 100svh;
-
-        padding: 70px 17px;
+        padding: 55px 16px 45px;
+        overflow-y: auto;
     }
+
+    .slide-content {
+        width: 100%;
+        max-width: 420px;
+    }
+
+    .section-label {
+        font-size: 9px;
+        letter-spacing: 3px;
+        margin-bottom: 12px;
+    }
+
+    .slide h2 {
+        font-size: clamp(42px, 13vw, 58px);
+        line-height: 1;
+        margin-bottom: 18px;
+    }
+
+    .slide p {
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+
+    /* =========================
+       OPENING
+    ========================= */
 
     .opening {
         min-height: 100svh;
+        padding: 20px;
+    }
+
+    .opening-content {
+        width: 100%;
+        max-width: 360px;
     }
 
     .small-title {
         font-size: 9px;
-
-        letter-spacing: 4px;
+        letter-spacing: 3px;
+        margin-bottom: 18px;
     }
 
     .opening h1 {
-        font-size: 75px;
+        font-size: clamp(65px, 20vw, 85px);
+        line-height: .85;
+    }
+
+    .opening h1 span {
+        margin: 16px 0;
     }
 
     .opening-date {
-        font-size: 11px;
-
-        letter-spacing: 4px;
+        margin-top: 28px;
+        font-size: 10px;
+        letter-spacing: 3px;
     }
 
     .opening-text {
+        margin-top: 25px;
         font-size: 11px;
+        line-height: 1.7;
     }
 
     .open-button {
-        font-size: 11px;
-
+        margin-top: 25px;
         padding: 12px 20px;
+        font-size: 10px;
     }
 
 
-    /* Couple */
+    /* =========================
+       BRIDE & GROOM
+    ========================= */
+
+    .couple-intro {
+        max-width: 340px;
+        font-size: 12px;
+        margin: 0 auto 28px;
+    }
 
     .couple-wrapper {
         flex-direction: column;
-
-        gap: 20px;
+        gap: 13px;
     }
 
     .person {
         width: 100%;
+        max-width: 280px;
     }
 
     .person-photo {
-        width: 140px;
-        height: 140px;
+        width: 125px;
+        height: 125px;
+        padding: 5px;
+        margin-bottom: 12px;
     }
 
     .person h3 {
-        font-size: 23px;
+        font-size: 21px;
+        line-height: 1.2;
+    }
+
+    .person .nickname {
+        font-size: 12px;
+        margin-bottom: 7px;
+    }
+
+    .person > p:last-child {
+        font-size: 10px;
+        line-height: 1.5;
     }
 
     .couple-symbol {
-        font-size: 35px;
+        font-size: 30px;
+        line-height: 1;
     }
 
-    .couple-intro {
-        font-size: 12px;
-
-        margin-bottom: 30px;
+    .next-button {
+        margin-top: 30px;
     }
 
 
-    /* Menu */
+    /* =========================
+       WEDDING MENU
+    ========================= */
+
+    .menu-description {
+        font-size: 11px;
+        margin-bottom: 22px;
+    }
 
     .menu-grid {
         grid-template-columns: 1fr;
-
-        max-width: 400px;
-    }
-
-    .menu-card {
-        min-height: 155px;
-
-        padding: 23px;
-    }
-
-    .menu-card h3 {
-        font-size: 23px;
-    }
-
-
-    /* Event */
-
-    .event-card {
-        padding: 35px 20px;
-    }
-
-
-    /* Countdown */
-
-    .countdown-wrapper {
-        gap: 10px;
-    }
-
-    .countdown-box {
-        width: calc(50% - 10px);
-
-        min-height: 105px;
-    }
-
-    .countdown-box strong {
-        font-size: 35px;
-    }
-
-
-    /* Story */
-
-    .story-list {
-        margin-top: 25px;
-    }
-
-    .story-item {
-        gap: 15px;
-
-        padding: 20px 0;
-    }
-
-
-    /* Gallery */
-
-    .gallery {
-        grid-template-columns: 1fr;
-
+        width: 100%;
+        max-width: 360px;
         gap: 12px;
     }
 
-    .gallery img {
-        height: 250px;
+    .menu-card {
+        min-height: 125px;
+        padding: 18px 18px;
+        border-radius: 13px;
+    }
+
+    .menu-card > i {
+        font-size: 21px;
+        margin-bottom: 10px;
+    }
+
+    .menu-card h3 {
+        font-size: 21px;
+        margin-bottom: 5px;
+    }
+
+    .menu-card p {
+        font-size: 10px;
+        line-height: 1.5;
+        margin-bottom: 9px;
+    }
+
+    .menu-card span {
+        font-size: 9px;
+    }
+
+    .wedding-menu .back-button {
+        margin-top: 22px;
     }
 
 
-    /* RSVP */
+    /* =========================
+       EVENT CARD
+    ========================= */
+
+    .event-card {
+        width: 100%;
+        max-width: 360px;
+        margin: 25px auto;
+        padding: 30px 18px;
+    }
+
+    .event-card > i {
+        font-size: 30px;
+    }
+
+    .event-card h3 {
+        font-size: 26px;
+    }
+
+    .event-card p {
+        font-size: 11px;
+    }
+
+    .location-button {
+        font-size: 10px;
+        padding: 10px 17px;
+    }
+
+
+    /* =========================
+       COUNTDOWN
+    ========================= */
+
+    .countdown-wrapper {
+        width: 100%;
+        max-width: 350px;
+        gap: 8px;
+        margin: 28px auto;
+    }
+
+    .countdown-box {
+        width: calc(50% - 4px);
+        min-height: 90px;
+        padding: 14px;
+    }
+
+    .countdown-box strong {
+        font-size: 32px;
+    }
+
+    .countdown-box span {
+        font-size: 8px;
+        letter-spacing: 1px;
+    }
+
+
+    /* =========================
+       OUR STORY
+    ========================= */
+
+    .story-list {
+        width: 100%;
+        max-width: 360px;
+        margin: 20px auto;
+    }
+
+    .story-item {
+        gap: 12px;
+        padding: 16px 0;
+    }
+
+    .story-item > span {
+        min-width: 32px;
+        font-size: 20px;
+    }
+
+    .story-item h3 {
+        font-size: 21px;
+    }
+
+    .story-item p {
+        font-size: 10px;
+        line-height: 1.6;
+    }
+
+
+    /* =========================
+       GALLERY
+    ========================= */
+
+    .gallery {
+        width: 100%;
+        max-width: 360px;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin: 25px auto;
+    }
+
+    .gallery img {
+        width: 100%;
+        height: 220px;
+        border-radius: 12px;
+    }
+
+
+    /* =========================
+       RSVP
+    ========================= */
 
     .rsvp-form {
-        padding: 25px 20px;
+        width: 100%;
+        max-width: 360px;
+        margin: 25px auto;
+        padding: 22px 17px;
+        border-radius: 15px;
+    }
+
+    .form-group {
+        margin-bottom: 16px;
+    }
+
+    .form-group label {
+        font-size: 10px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 11px 12px;
+        font-size: 11px;
+    }
+
+    .submit-button {
+        padding: 12px;
+        font-size: 11px;
     }
 
 
-    /* Buttons */
+    /* =========================
+       BUTTONS
+    ========================= */
 
     .next-button,
     .back-button {
         font-size: 10px;
+        padding: 10px 16px;
+        max-width: 100%;
+    }
 
-        padding: 11px 18px;
+
+    /* =========================
+       THANK YOU
+    ========================= */
+
+    .thank-you h2 {
+        font-size: clamp(48px, 15vw, 70px);
+    }
+
+    .thank-you-names {
+        font-size: 34px;
+        margin-top: 25px;
+    }
+
+    .closing-text {
+        font-size: 18px !important;
     }
 
 }
